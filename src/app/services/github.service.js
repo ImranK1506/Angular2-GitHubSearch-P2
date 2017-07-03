@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
 var GithubService = (function () {
     function GithubService(_http) {
@@ -16,7 +17,7 @@ var GithubService = (function () {
         this.client_id = '90436210ee5c24795ab9';
         this.client_secret = 'b192971b3af78f152af0509abf73d58824c37ac5';
         console.log('Github Service Ready... ');
-        this.username = 'imrankhan';
+        this.username = 'imrank1506';
     }
     GithubService.prototype.getUser = function () {
         return this._http.get('http://api.github.com/users/' + this.username + '?client_id=' + this.client_id + '&client_secret=' + this.client_secret)
@@ -26,7 +27,7 @@ var GithubService = (function () {
 }());
 GithubService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [Object])
+    __metadata("design:paramtypes", [http_1.Http])
 ], GithubService);
 exports.GithubService = GithubService;
 //# sourceMappingURL=github.service.js.map

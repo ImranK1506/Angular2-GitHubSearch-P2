@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Htpp, Headers} from '@angular/http';
+import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -10,7 +10,7 @@ export class GithubService{
 
     constructor(private _http: Http){
         console.log('Github Service Ready... ');
-        this.username = 'imrankhan';
+        this.username = 'imrank1506';
     }
 
     getUser(){
